@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 1rem 0;
+}
+
+.input {
+  all: unset;
+  font-family: var(--sans);
+  border: none;
+  outline: none;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 1rem;
+  width: 24em;
+  cursor:text;
+}
+
+@media screen and (max-width: 900px){
+  .input {
+    width: auto
+  }
+}
+
+.submit {
+  all: unset;
+  font-family: var(--sans);
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  text-decoration: underline;
+}
+
+.message {
+  font-size: 1.25rem;
+  line-height: 1.325;
+  max-width: 32em;
+  width: 100%;
+}

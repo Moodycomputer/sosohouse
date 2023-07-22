@@ -1,0 +1,64 @@
+.grid {
+  color: var(--black);
+  background-color: var(--green);
+  padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 900px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logoBox {
+  padding: .75rem;
+  background-color: var(--white);
+  height: 4.5rem;
+  width: 9rem;
+  margin: .75rem 0 3rem;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: .9;
+}
+
+.contents {
+  display: flex;
+  flex-flow: column;
+}
+
+.headline {
+  font-size: 5rem;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 1.325;
+  max-width: 32em;
+  margin: 0 0 1rem;
+}
+
+.note {
+  vertical-align: super;
+  font-size: .75rem;
+  font-family: var(--sans);
+}
+
+.footnotes {
+  margin-top: auto;
+  padding-top: 4rem;
+}
+
+.footnotes p {
+  font-size: .875rem;
+  margin: 0;
+}
+
